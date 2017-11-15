@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CreditCounter
 {
-    public partial class Form1 : Form
+    public partial class lblHowManyCredits : Form
     {
-        public Form1()
+        public lblHowManyCredits()
         {
             InitializeComponent();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
