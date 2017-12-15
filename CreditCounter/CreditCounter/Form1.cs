@@ -37,6 +37,7 @@ namespace CreditCounter
             {
                 bool_HasCreditBeenEntered = true;
                 UpDateCoinsEnteredLabels();//calling the method to update lables in coins entered groupbox
+                UpdateInt_Values();//calling the method to update the text box to show total value in pence
             }
         }
         private void UpDateCoinsEnteredLabels()//method for updating the lables in the coins entered group box
@@ -69,6 +70,14 @@ namespace CreditCounter
                     break;
             }
         }
+
+        private void UpdateInt_Values()//method for updating 
+        {
+            txtboxTotalValueP.Text = Convert.ToString(Convert.ToInt32(txtboxTotalValueP.Text) + int_ButtonValueLastClicked);//Adding the current value of the total value in p text box to the value of coin last clicked
+            
+
+        }
+
 
 
         private void PicCoins1p_Click(object sender, EventArgs e)
