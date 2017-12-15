@@ -70,6 +70,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblCostPerCredit = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
+            this.Copyrightlbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicCoinsEntered)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCoins2p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCoins1p)).BeginInit();
@@ -193,6 +194,7 @@
             // 
             // GroupBoxCoins
             // 
+            this.GroupBoxCoins.BackColor = System.Drawing.Color.White;
             this.GroupBoxCoins.Controls.Add(this.txtboxTotalValueMeasures);
             this.GroupBoxCoins.Controls.Add(this.txtboxTotalValueP);
             this.GroupBoxCoins.Controls.Add(this.lblClickToBuyCoin);
@@ -269,6 +271,8 @@
             // 
             // GroupBoxCoinsEntered
             // 
+            this.GroupBoxCoinsEntered.BackColor = System.Drawing.Color.White;
+            this.GroupBoxCoinsEntered.Controls.Add(this.Copyrightlbl);
             this.GroupBoxCoinsEntered.Controls.Add(this.Multiplier200P);
             this.GroupBoxCoinsEntered.Controls.Add(this.Multiplier100P);
             this.GroupBoxCoinsEntered.Controls.Add(this.Multiplier50P);
@@ -288,7 +292,7 @@
             this.GroupBoxCoinsEntered.Controls.Add(this.PicCoinsEntered);
             this.GroupBoxCoinsEntered.Location = new System.Drawing.Point(261, 12);
             this.GroupBoxCoinsEntered.Name = "GroupBoxCoinsEntered";
-            this.GroupBoxCoinsEntered.Size = new System.Drawing.Size(200, 439);
+            this.GroupBoxCoinsEntered.Size = new System.Drawing.Size(200, 458);
             this.GroupBoxCoinsEntered.TabIndex = 12;
             this.GroupBoxCoinsEntered.TabStop = false;
             this.GroupBoxCoinsEntered.Text = "Coins Entered";
@@ -496,25 +500,41 @@
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.Red;
             this.btnReset.Location = new System.Drawing.Point(12, 420);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(236, 31);
             this.btnReset.TabIndex = 14;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // Copyrightlbl
+            // 
+            this.Copyrightlbl.AutoSize = true;
+            this.Copyrightlbl.Location = new System.Drawing.Point(-1, 440);
+            this.Copyrightlbl.Name = "Copyrightlbl";
+            this.Copyrightlbl.Size = new System.Drawing.Size(195, 13);
+            this.Copyrightlbl.TabIndex = 31;
+            this.Copyrightlbl.Text = "Copyright © Miles Ejgierd - Waring 2017";
+            this.Copyrightlbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblHowManyCredits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 474);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(469, 480);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.GroupBoxCredits);
             this.Controls.Add(this.GroupBoxCoinsEntered);
             this.Controls.Add(this.GroupBoxCoins);
             this.Controls.Add(this.lblCoinsEntered);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "lblHowManyCredits";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Money Credit Counter v2.0";
+            this.Load += new System.EventHandler(this.lblHowManyCredits_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PicCoinsEntered)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCoins2p)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCoins1p)).EndInit();
@@ -578,6 +598,7 @@
         private System.Windows.Forms.TextBox txtboxCostPerCredit;
         private System.Windows.Forms.Label lblP2;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label Copyrightlbl;
     }
 }
 

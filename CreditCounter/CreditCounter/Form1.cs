@@ -14,6 +14,7 @@ namespace CreditCounter
     {
         int int_ButtonValueLastClicked; //Global variable to keep track of the coin value last clicked
         decimal decimal_ButtonValueLastClicked;//Global variable to keep track of the decimal value of the coin last clicked
+        int ValueEntered = 0;
         bool bool_HasCreditBeenEntered = false;//Global varaible to see if the user has entered a cost per credit
 
         public lblHowManyCredits()
@@ -39,6 +40,7 @@ namespace CreditCounter
                 bool_HasCreditBeenEntered = true;
                 UpDateCoinsEnteredLabels();//calling the method to update lables in coins entered groupbox
                 UpdateInt_DecValues();//calling the method to update the text box to show total value in pence
+                CreditReached();//calling method to update the amount of credits the user has got
             }
         }
         private void UpDateCoinsEnteredLabels()//method for updating the lables in the coins entered group box
@@ -72,12 +74,34 @@ namespace CreditCounter
             }
         }
 
-        private void UpdateInt_DecValues()//method for updating 
+        private void UpdateInt_DecValues()//method for updating the interger and decimal total coin values
         {
             txtboxTotalValueP.Text = Convert.ToString(Convert.ToInt32(txtboxTotalValueP.Text) + int_ButtonValueLastClicked);//Adding the current value of the total value in p text box to the value of coin last clicked
             txtboxTotalValueMeasures.Text = Convert.ToString(Convert.ToDecimal(txtboxTotalValueMeasures.Text) + decimal_ButtonValueLastClicked);//Adding the current decimal value of the total value entered and the decimal value of coin last clicked
 
         }
+
+        private void CreditReached()//method for checking if the user has gained a credit
+        {
+            int CreditLimit = Convert.ToInt32(txtboxCostPerCredit.Text);//creating a new variable so that we know what the credit cap is, also assinging the cost per credit value to it.
+            int WorkingOut = 0;//creating a new variable will hold temporary values that help with the following working out.
+            int remainder = 0;//creating a new variable so i can assign the remainder value to it
+
+            int updateNOClbl = Convert.ToInt32(txtboxNumberOfCredits.Text);//creating a variable to store the number of credits the user already has
+            ValueEntered = ValueEntered + int_ButtonValueLastClicked;//a counter so that every time a button is clicked the value will increase 
+
+            if (ValueEntered >= CreditLimit)//if statement to see if a credit is needed
+            { //if a credit is needed
+                WorkingOut = (ValueEntered / CreditLimit); //working out how many credits
+                remainder = (ValueEntered % CreditLimit); //working out the remainder so the users money isnt wasted
+
+                txtboxNumberOfCredits.Text = Convert.ToString(updateNOClbl + WorkingOut);//finally updating the numbe rof credits that the user has
+
+                ValueEntered = remainder; //assigning the global variable the value of the remainder of the previous %
+            }
+
+        }
+
 
 
 
@@ -151,6 +175,39 @@ namespace CreditCounter
             decimal_ButtonValueLastClicked = 2.00m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
+        }
+
+        private void lblHowManyCredits_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {//when the reset button is clicked we want to make sure that all the labels, textboxes and variables have been reset.
+            int_ButtonValueLastClicked = 0;
+            ValueEntered = 0;
+            bool_HasCreditBeenEntered = false;
+            decimal_ButtonValueLastClicked = 0.00m;
+
+            txtboxCostPerCredit.Text = "0";
+            txtboxNumberOfCredits.Text = "0";
+            txtboxTotalValueP.Text = "0";
+            txtboxTotalValueMeasures.Text = "0.00";
+
+            lblCoinsEntered1P.Text = "0";
+            lblCoinsEntered2P.Text = "0";
+            lblCoinsEntered5P.Text = "0";
+            lblCoinsEntered10P.Text = "0";
+            lblCoinsEntered20P.Text = "0";
+            lblCoinsEntered50P.Text = "0";
+            lblCoinsEntered100P.Text = "0";
+            lblCoinsEntered200P.Text = "0";
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
