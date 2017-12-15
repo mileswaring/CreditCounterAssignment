@@ -40,36 +40,36 @@
             this.PicCoins200p = new System.Windows.Forms.PictureBox();
             this.lblCoinsEntered = new System.Windows.Forms.Label();
             this.GroupBoxCoins = new System.Windows.Forms.GroupBox();
-            this.GroupBoxCoinsEntered = new System.Windows.Forms.GroupBox();
-            this.GroupBoxCredits = new System.Windows.Forms.GroupBox();
-            this.lblCostPerCredit = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblTotalValue = new System.Windows.Forms.Label();
-            this.lblCoinsMeasure = new System.Windows.Forms.Label();
-            this.lblP1 = new System.Windows.Forms.Label();
-            this.lblP2 = new System.Windows.Forms.Label();
-            this.lblClickToBuyCoin = new System.Windows.Forms.Label();
-            this.txtboxTotalValueP = new System.Windows.Forms.TextBox();
             this.txtboxTotalValueMeasures = new System.Windows.Forms.TextBox();
-            this.txtboxCostPerCredit = new System.Windows.Forms.TextBox();
-            this.txtboxNumberOfCredits = new System.Windows.Forms.TextBox();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.lblCoinsEntered1P = new System.Windows.Forms.Label();
-            this.lblCoinsEntered2P = new System.Windows.Forms.Label();
-            this.lblCoinsEntered5P = new System.Windows.Forms.Label();
-            this.lblCoinsEntered10P = new System.Windows.Forms.Label();
-            this.lblCoinsEntered20P = new System.Windows.Forms.Label();
-            this.lblCoinsEntered50P = new System.Windows.Forms.Label();
-            this.lblCoinsEntered100P = new System.Windows.Forms.Label();
-            this.lblCoinsEntered200P = new System.Windows.Forms.Label();
-            this.Multiplier1P = new System.Windows.Forms.Label();
-            this.Multiplier2P = new System.Windows.Forms.Label();
-            this.Multiplier5P = new System.Windows.Forms.Label();
-            this.Multiplier10P = new System.Windows.Forms.Label();
-            this.Multiplier20P = new System.Windows.Forms.Label();
-            this.Multiplier50P = new System.Windows.Forms.Label();
-            this.Multiplier100P = new System.Windows.Forms.Label();
+            this.txtboxTotalValueP = new System.Windows.Forms.TextBox();
+            this.lblClickToBuyCoin = new System.Windows.Forms.Label();
+            this.lblP1 = new System.Windows.Forms.Label();
+            this.lblCoinsMeasure = new System.Windows.Forms.Label();
+            this.lblTotalValue = new System.Windows.Forms.Label();
+            this.GroupBoxCoinsEntered = new System.Windows.Forms.GroupBox();
             this.Multiplier200P = new System.Windows.Forms.Label();
+            this.Multiplier100P = new System.Windows.Forms.Label();
+            this.Multiplier50P = new System.Windows.Forms.Label();
+            this.Multiplier20P = new System.Windows.Forms.Label();
+            this.Multiplier10P = new System.Windows.Forms.Label();
+            this.Multiplier5P = new System.Windows.Forms.Label();
+            this.Multiplier2P = new System.Windows.Forms.Label();
+            this.Multiplier1P = new System.Windows.Forms.Label();
+            this.lblCoinsEntered200P = new System.Windows.Forms.Label();
+            this.lblCoinsEntered100P = new System.Windows.Forms.Label();
+            this.lblCoinsEntered50P = new System.Windows.Forms.Label();
+            this.lblCoinsEntered20P = new System.Windows.Forms.Label();
+            this.lblCoinsEntered10P = new System.Windows.Forms.Label();
+            this.lblCoinsEntered5P = new System.Windows.Forms.Label();
+            this.lblCoinsEntered2P = new System.Windows.Forms.Label();
+            this.lblCoinsEntered1P = new System.Windows.Forms.Label();
+            this.GroupBoxCredits = new System.Windows.Forms.GroupBox();
+            this.txtboxNumberOfCredits = new System.Windows.Forms.TextBox();
+            this.txtboxCostPerCredit = new System.Windows.Forms.TextBox();
+            this.lblP2 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblCostPerCredit = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicCoinsEntered)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCoins2p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCoins1p)).BeginInit();
@@ -104,6 +104,7 @@
             this.PicCoins2p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicCoins2p.TabIndex = 1;
             this.PicCoins2p.TabStop = false;
+            this.PicCoins2p.Click += new System.EventHandler(this.PicCoins2p_Click);
             // 
             // PicCoins1p
             // 
@@ -114,6 +115,7 @@
             this.PicCoins1p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicCoins1p.TabIndex = 2;
             this.PicCoins1p.TabStop = false;
+            this.PicCoins1p.Click += new System.EventHandler(this.PicCoins1p_Click);
             // 
             // PicCoins5p
             // 
@@ -124,6 +126,7 @@
             this.PicCoins5p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicCoins5p.TabIndex = 3;
             this.PicCoins5p.TabStop = false;
+            this.PicCoins5p.Click += new System.EventHandler(this.PicCoins5p_Click);
             // 
             // PicCoins10p
             // 
@@ -134,6 +137,7 @@
             this.PicCoins10p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicCoins10p.TabIndex = 4;
             this.PicCoins10p.TabStop = false;
+            this.PicCoins10p.Click += new System.EventHandler(this.PicCoins10p_Click);
             // 
             // PicCoins20p
             // 
@@ -144,6 +148,7 @@
             this.PicCoins20p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicCoins20p.TabIndex = 5;
             this.PicCoins20p.TabStop = false;
+            this.PicCoins20p.Click += new System.EventHandler(this.PicCoins20p_Click);
             // 
             // PicCoins50p
             // 
@@ -154,6 +159,7 @@
             this.PicCoins50p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicCoins50p.TabIndex = 6;
             this.PicCoins50p.TabStop = false;
+            this.PicCoins50p.Click += new System.EventHandler(this.PicCoins50p_Click);
             // 
             // PicCoins100p
             // 
@@ -164,6 +170,7 @@
             this.PicCoins100p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicCoins100p.TabIndex = 7;
             this.PicCoins100p.TabStop = false;
+            this.PicCoins100p.Click += new System.EventHandler(this.PicCoins100p_Click);
             // 
             // PicCoins200p
             // 
@@ -174,6 +181,7 @@
             this.PicCoins200p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicCoins200p.TabIndex = 8;
             this.PicCoins200p.TabStop = false;
+            this.PicCoins200p.Click += new System.EventHandler(this.PicCoins200p_Click);
             // 
             // lblCoinsEntered
             // 
@@ -207,6 +215,58 @@
             this.GroupBoxCoins.Text = "Coins";
             this.GroupBoxCoins.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // txtboxTotalValueMeasures
+            // 
+            this.txtboxTotalValueMeasures.Location = new System.Drawing.Point(164, 281);
+            this.txtboxTotalValueMeasures.Name = "txtboxTotalValueMeasures";
+            this.txtboxTotalValueMeasures.Size = new System.Drawing.Size(55, 20);
+            this.txtboxTotalValueMeasures.TabIndex = 19;
+            this.txtboxTotalValueMeasures.Text = "0.0";
+            // 
+            // txtboxTotalValueP
+            // 
+            this.txtboxTotalValueP.Location = new System.Drawing.Point(77, 281);
+            this.txtboxTotalValueP.Name = "txtboxTotalValueP";
+            this.txtboxTotalValueP.Size = new System.Drawing.Size(55, 20);
+            this.txtboxTotalValueP.TabIndex = 18;
+            this.txtboxTotalValueP.Text = "0";
+            // 
+            // lblClickToBuyCoin
+            // 
+            this.lblClickToBuyCoin.AutoSize = true;
+            this.lblClickToBuyCoin.Location = new System.Drawing.Point(65, 19);
+            this.lblClickToBuyCoin.Name = "lblClickToBuyCoin";
+            this.lblClickToBuyCoin.Size = new System.Drawing.Size(128, 13);
+            this.lblClickToBuyCoin.TabIndex = 17;
+            this.lblClickToBuyCoin.Text = "Click a coin to buy credits";
+            // 
+            // lblP1
+            // 
+            this.lblP1.AutoSize = true;
+            this.lblP1.Location = new System.Drawing.Point(220, 284);
+            this.lblP1.Name = "lblP1";
+            this.lblP1.Size = new System.Drawing.Size(13, 13);
+            this.lblP1.TabIndex = 16;
+            this.lblP1.Text = "p";
+            // 
+            // lblCoinsMeasure
+            // 
+            this.lblCoinsMeasure.AutoSize = true;
+            this.lblCoinsMeasure.Location = new System.Drawing.Point(138, 284);
+            this.lblCoinsMeasure.Name = "lblCoinsMeasure";
+            this.lblCoinsMeasure.Size = new System.Drawing.Size(25, 13);
+            this.lblCoinsMeasure.TabIndex = 15;
+            this.lblCoinsMeasure.Text = "p  £";
+            // 
+            // lblTotalValue
+            // 
+            this.lblTotalValue.AutoSize = true;
+            this.lblTotalValue.Location = new System.Drawing.Point(6, 284);
+            this.lblTotalValue.Name = "lblTotalValue";
+            this.lblTotalValue.Size = new System.Drawing.Size(64, 13);
+            this.lblTotalValue.TabIndex = 14;
+            this.lblTotalValue.Text = "Total Value:";
+            // 
             // GroupBoxCoinsEntered
             // 
             this.GroupBoxCoinsEntered.Controls.Add(this.Multiplier200P);
@@ -233,6 +293,150 @@
             this.GroupBoxCoinsEntered.TabStop = false;
             this.GroupBoxCoinsEntered.Text = "Coins Entered";
             // 
+            // Multiplier200P
+            // 
+            this.Multiplier200P.AutoSize = true;
+            this.Multiplier200P.Location = new System.Drawing.Point(64, 398);
+            this.Multiplier200P.Name = "Multiplier200P";
+            this.Multiplier200P.Size = new System.Drawing.Size(14, 13);
+            this.Multiplier200P.TabIndex = 30;
+            this.Multiplier200P.Text = "X";
+            // 
+            // Multiplier100P
+            // 
+            this.Multiplier100P.AutoSize = true;
+            this.Multiplier100P.Location = new System.Drawing.Point(64, 341);
+            this.Multiplier100P.Name = "Multiplier100P";
+            this.Multiplier100P.Size = new System.Drawing.Size(14, 13);
+            this.Multiplier100P.TabIndex = 29;
+            this.Multiplier100P.Text = "X";
+            // 
+            // Multiplier50P
+            // 
+            this.Multiplier50P.AutoSize = true;
+            this.Multiplier50P.Location = new System.Drawing.Point(64, 284);
+            this.Multiplier50P.Name = "Multiplier50P";
+            this.Multiplier50P.Size = new System.Drawing.Size(14, 13);
+            this.Multiplier50P.TabIndex = 28;
+            this.Multiplier50P.Text = "X";
+            // 
+            // Multiplier20P
+            // 
+            this.Multiplier20P.AutoSize = true;
+            this.Multiplier20P.Location = new System.Drawing.Point(64, 232);
+            this.Multiplier20P.Name = "Multiplier20P";
+            this.Multiplier20P.Size = new System.Drawing.Size(14, 13);
+            this.Multiplier20P.TabIndex = 27;
+            this.Multiplier20P.Text = "X";
+            // 
+            // Multiplier10P
+            // 
+            this.Multiplier10P.AutoSize = true;
+            this.Multiplier10P.Location = new System.Drawing.Point(64, 183);
+            this.Multiplier10P.Name = "Multiplier10P";
+            this.Multiplier10P.Size = new System.Drawing.Size(14, 13);
+            this.Multiplier10P.TabIndex = 26;
+            this.Multiplier10P.Text = "X";
+            // 
+            // Multiplier5P
+            // 
+            this.Multiplier5P.AutoSize = true;
+            this.Multiplier5P.Location = new System.Drawing.Point(64, 128);
+            this.Multiplier5P.Name = "Multiplier5P";
+            this.Multiplier5P.Size = new System.Drawing.Size(14, 13);
+            this.Multiplier5P.TabIndex = 25;
+            this.Multiplier5P.Text = "X";
+            // 
+            // Multiplier2P
+            // 
+            this.Multiplier2P.AutoSize = true;
+            this.Multiplier2P.Location = new System.Drawing.Point(64, 75);
+            this.Multiplier2P.Name = "Multiplier2P";
+            this.Multiplier2P.Size = new System.Drawing.Size(14, 13);
+            this.Multiplier2P.TabIndex = 24;
+            this.Multiplier2P.Text = "X";
+            // 
+            // Multiplier1P
+            // 
+            this.Multiplier1P.AutoSize = true;
+            this.Multiplier1P.Location = new System.Drawing.Point(64, 32);
+            this.Multiplier1P.Name = "Multiplier1P";
+            this.Multiplier1P.Size = new System.Drawing.Size(14, 13);
+            this.Multiplier1P.TabIndex = 23;
+            this.Multiplier1P.Text = "X";
+            // 
+            // lblCoinsEntered200P
+            // 
+            this.lblCoinsEntered200P.AutoSize = true;
+            this.lblCoinsEntered200P.Location = new System.Drawing.Point(31, 398);
+            this.lblCoinsEntered200P.Name = "lblCoinsEntered200P";
+            this.lblCoinsEntered200P.Size = new System.Drawing.Size(13, 13);
+            this.lblCoinsEntered200P.TabIndex = 22;
+            this.lblCoinsEntered200P.Text = "0";
+            // 
+            // lblCoinsEntered100P
+            // 
+            this.lblCoinsEntered100P.AutoSize = true;
+            this.lblCoinsEntered100P.Location = new System.Drawing.Point(31, 341);
+            this.lblCoinsEntered100P.Name = "lblCoinsEntered100P";
+            this.lblCoinsEntered100P.Size = new System.Drawing.Size(13, 13);
+            this.lblCoinsEntered100P.TabIndex = 21;
+            this.lblCoinsEntered100P.Text = "0";
+            // 
+            // lblCoinsEntered50P
+            // 
+            this.lblCoinsEntered50P.AutoSize = true;
+            this.lblCoinsEntered50P.Location = new System.Drawing.Point(31, 284);
+            this.lblCoinsEntered50P.Name = "lblCoinsEntered50P";
+            this.lblCoinsEntered50P.Size = new System.Drawing.Size(13, 13);
+            this.lblCoinsEntered50P.TabIndex = 20;
+            this.lblCoinsEntered50P.Text = "0";
+            // 
+            // lblCoinsEntered20P
+            // 
+            this.lblCoinsEntered20P.AutoSize = true;
+            this.lblCoinsEntered20P.Location = new System.Drawing.Point(31, 232);
+            this.lblCoinsEntered20P.Name = "lblCoinsEntered20P";
+            this.lblCoinsEntered20P.Size = new System.Drawing.Size(13, 13);
+            this.lblCoinsEntered20P.TabIndex = 19;
+            this.lblCoinsEntered20P.Text = "0";
+            // 
+            // lblCoinsEntered10P
+            // 
+            this.lblCoinsEntered10P.AutoSize = true;
+            this.lblCoinsEntered10P.Location = new System.Drawing.Point(31, 183);
+            this.lblCoinsEntered10P.Name = "lblCoinsEntered10P";
+            this.lblCoinsEntered10P.Size = new System.Drawing.Size(13, 13);
+            this.lblCoinsEntered10P.TabIndex = 18;
+            this.lblCoinsEntered10P.Text = "0";
+            // 
+            // lblCoinsEntered5P
+            // 
+            this.lblCoinsEntered5P.AutoSize = true;
+            this.lblCoinsEntered5P.Location = new System.Drawing.Point(31, 128);
+            this.lblCoinsEntered5P.Name = "lblCoinsEntered5P";
+            this.lblCoinsEntered5P.Size = new System.Drawing.Size(13, 13);
+            this.lblCoinsEntered5P.TabIndex = 17;
+            this.lblCoinsEntered5P.Text = "0";
+            // 
+            // lblCoinsEntered2P
+            // 
+            this.lblCoinsEntered2P.AutoSize = true;
+            this.lblCoinsEntered2P.Location = new System.Drawing.Point(31, 75);
+            this.lblCoinsEntered2P.Name = "lblCoinsEntered2P";
+            this.lblCoinsEntered2P.Size = new System.Drawing.Size(13, 13);
+            this.lblCoinsEntered2P.TabIndex = 16;
+            this.lblCoinsEntered2P.Text = "0";
+            // 
+            // lblCoinsEntered1P
+            // 
+            this.lblCoinsEntered1P.AutoSize = true;
+            this.lblCoinsEntered1P.Location = new System.Drawing.Point(31, 32);
+            this.lblCoinsEntered1P.Name = "lblCoinsEntered1P";
+            this.lblCoinsEntered1P.Size = new System.Drawing.Size(13, 13);
+            this.lblCoinsEntered1P.TabIndex = 15;
+            this.lblCoinsEntered1P.Text = "0";
+            // 
             // GroupBoxCredits
             // 
             this.GroupBoxCredits.Controls.Add(this.txtboxNumberOfCredits);
@@ -247,50 +451,21 @@
             this.GroupBoxCredits.TabStop = false;
             this.GroupBoxCredits.Text = "Credits";
             // 
-            // lblCostPerCredit
+            // txtboxNumberOfCredits
             // 
-            this.lblCostPerCredit.AutoSize = true;
-            this.lblCostPerCredit.Location = new System.Drawing.Point(6, 25);
-            this.lblCostPerCredit.Name = "lblCostPerCredit";
-            this.lblCostPerCredit.Size = new System.Drawing.Size(157, 13);
-            this.lblCostPerCredit.TabIndex = 9;
-            this.lblCostPerCredit.Text = "Please enter the cost per credit:";
+            this.txtboxNumberOfCredits.Location = new System.Drawing.Point(209, 54);
+            this.txtboxNumberOfCredits.Name = "txtboxNumberOfCredits";
+            this.txtboxNumberOfCredits.Size = new System.Drawing.Size(44, 20);
+            this.txtboxNumberOfCredits.TabIndex = 19;
+            this.txtboxNumberOfCredits.Text = "0";
             // 
-            // label2
+            // txtboxCostPerCredit
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "You presently have this number of credits:";
-            // 
-            // lblTotalValue
-            // 
-            this.lblTotalValue.AutoSize = true;
-            this.lblTotalValue.Location = new System.Drawing.Point(6, 284);
-            this.lblTotalValue.Name = "lblTotalValue";
-            this.lblTotalValue.Size = new System.Drawing.Size(64, 13);
-            this.lblTotalValue.TabIndex = 14;
-            this.lblTotalValue.Text = "Total Value:";
-            // 
-            // lblCoinsMeasure
-            // 
-            this.lblCoinsMeasure.AutoSize = true;
-            this.lblCoinsMeasure.Location = new System.Drawing.Point(138, 284);
-            this.lblCoinsMeasure.Name = "lblCoinsMeasure";
-            this.lblCoinsMeasure.Size = new System.Drawing.Size(25, 13);
-            this.lblCoinsMeasure.TabIndex = 15;
-            this.lblCoinsMeasure.Text = "p  £";
-            // 
-            // lblP1
-            // 
-            this.lblP1.AutoSize = true;
-            this.lblP1.Location = new System.Drawing.Point(220, 284);
-            this.lblP1.Name = "lblP1";
-            this.lblP1.Size = new System.Drawing.Size(13, 13);
-            this.lblP1.TabIndex = 16;
-            this.lblP1.Text = "p";
+            this.txtboxCostPerCredit.Location = new System.Drawing.Point(170, 22);
+            this.txtboxCostPerCredit.Name = "txtboxCostPerCredit";
+            this.txtboxCostPerCredit.Size = new System.Drawing.Size(63, 20);
+            this.txtboxCostPerCredit.TabIndex = 18;
+            this.txtboxCostPerCredit.Text = "0";
             // 
             // lblP2
             // 
@@ -301,46 +476,23 @@
             this.lblP2.TabIndex = 17;
             this.lblP2.Text = "p";
             // 
-            // lblClickToBuyCoin
+            // label2
             // 
-            this.lblClickToBuyCoin.AutoSize = true;
-            this.lblClickToBuyCoin.Location = new System.Drawing.Point(65, 19);
-            this.lblClickToBuyCoin.Name = "lblClickToBuyCoin";
-            this.lblClickToBuyCoin.Size = new System.Drawing.Size(128, 13);
-            this.lblClickToBuyCoin.TabIndex = 17;
-            this.lblClickToBuyCoin.Text = "Click a coin to buy credits";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(204, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "You presently have this number of credits:";
             // 
-            // txtboxTotalValueP
+            // lblCostPerCredit
             // 
-            this.txtboxTotalValueP.Location = new System.Drawing.Point(77, 281);
-            this.txtboxTotalValueP.Name = "txtboxTotalValueP";
-            this.txtboxTotalValueP.Size = new System.Drawing.Size(55, 20);
-            this.txtboxTotalValueP.TabIndex = 18;
-            this.txtboxTotalValueP.Text = "0";
-            // 
-            // txtboxTotalValueMeasures
-            // 
-            this.txtboxTotalValueMeasures.Location = new System.Drawing.Point(164, 281);
-            this.txtboxTotalValueMeasures.Name = "txtboxTotalValueMeasures";
-            this.txtboxTotalValueMeasures.Size = new System.Drawing.Size(55, 20);
-            this.txtboxTotalValueMeasures.TabIndex = 19;
-            this.txtboxTotalValueMeasures.Text = "0.0";
-            // 
-            // txtboxCostPerCredit
-            // 
-            this.txtboxCostPerCredit.Location = new System.Drawing.Point(170, 22);
-            this.txtboxCostPerCredit.Name = "txtboxCostPerCredit";
-            this.txtboxCostPerCredit.Size = new System.Drawing.Size(63, 20);
-            this.txtboxCostPerCredit.TabIndex = 18;
-            this.txtboxCostPerCredit.Text = "0";
-            // 
-            // txtboxNumberOfCredits
-            // 
-            this.txtboxNumberOfCredits.Location = new System.Drawing.Point(209, 54);
-            this.txtboxNumberOfCredits.Name = "txtboxNumberOfCredits";
-            this.txtboxNumberOfCredits.Size = new System.Drawing.Size(44, 20);
-            this.txtboxNumberOfCredits.TabIndex = 19;
-            this.txtboxNumberOfCredits.Text = "0";
+            this.lblCostPerCredit.AutoSize = true;
+            this.lblCostPerCredit.Location = new System.Drawing.Point(6, 25);
+            this.lblCostPerCredit.Name = "lblCostPerCredit";
+            this.lblCostPerCredit.Size = new System.Drawing.Size(157, 13);
+            this.lblCostPerCredit.TabIndex = 9;
+            this.lblCostPerCredit.Text = "Please enter the cost per credit:";
             // 
             // btnReset
             // 
@@ -350,150 +502,6 @@
             this.btnReset.TabIndex = 14;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // lblCoinsEntered1P
-            // 
-            this.lblCoinsEntered1P.AutoSize = true;
-            this.lblCoinsEntered1P.Location = new System.Drawing.Point(31, 32);
-            this.lblCoinsEntered1P.Name = "lblCoinsEntered1P";
-            this.lblCoinsEntered1P.Size = new System.Drawing.Size(13, 13);
-            this.lblCoinsEntered1P.TabIndex = 15;
-            this.lblCoinsEntered1P.Text = "0";
-            // 
-            // lblCoinsEntered2P
-            // 
-            this.lblCoinsEntered2P.AutoSize = true;
-            this.lblCoinsEntered2P.Location = new System.Drawing.Point(31, 75);
-            this.lblCoinsEntered2P.Name = "lblCoinsEntered2P";
-            this.lblCoinsEntered2P.Size = new System.Drawing.Size(13, 13);
-            this.lblCoinsEntered2P.TabIndex = 16;
-            this.lblCoinsEntered2P.Text = "0";
-            // 
-            // lblCoinsEntered5P
-            // 
-            this.lblCoinsEntered5P.AutoSize = true;
-            this.lblCoinsEntered5P.Location = new System.Drawing.Point(31, 128);
-            this.lblCoinsEntered5P.Name = "lblCoinsEntered5P";
-            this.lblCoinsEntered5P.Size = new System.Drawing.Size(13, 13);
-            this.lblCoinsEntered5P.TabIndex = 17;
-            this.lblCoinsEntered5P.Text = "0";
-            // 
-            // lblCoinsEntered10P
-            // 
-            this.lblCoinsEntered10P.AutoSize = true;
-            this.lblCoinsEntered10P.Location = new System.Drawing.Point(31, 183);
-            this.lblCoinsEntered10P.Name = "lblCoinsEntered10P";
-            this.lblCoinsEntered10P.Size = new System.Drawing.Size(13, 13);
-            this.lblCoinsEntered10P.TabIndex = 18;
-            this.lblCoinsEntered10P.Text = "0";
-            // 
-            // lblCoinsEntered20P
-            // 
-            this.lblCoinsEntered20P.AutoSize = true;
-            this.lblCoinsEntered20P.Location = new System.Drawing.Point(31, 232);
-            this.lblCoinsEntered20P.Name = "lblCoinsEntered20P";
-            this.lblCoinsEntered20P.Size = new System.Drawing.Size(13, 13);
-            this.lblCoinsEntered20P.TabIndex = 19;
-            this.lblCoinsEntered20P.Text = "0";
-            // 
-            // lblCoinsEntered50P
-            // 
-            this.lblCoinsEntered50P.AutoSize = true;
-            this.lblCoinsEntered50P.Location = new System.Drawing.Point(31, 284);
-            this.lblCoinsEntered50P.Name = "lblCoinsEntered50P";
-            this.lblCoinsEntered50P.Size = new System.Drawing.Size(13, 13);
-            this.lblCoinsEntered50P.TabIndex = 20;
-            this.lblCoinsEntered50P.Text = "0";
-            // 
-            // lblCoinsEntered100P
-            // 
-            this.lblCoinsEntered100P.AutoSize = true;
-            this.lblCoinsEntered100P.Location = new System.Drawing.Point(31, 341);
-            this.lblCoinsEntered100P.Name = "lblCoinsEntered100P";
-            this.lblCoinsEntered100P.Size = new System.Drawing.Size(13, 13);
-            this.lblCoinsEntered100P.TabIndex = 21;
-            this.lblCoinsEntered100P.Text = "0";
-            // 
-            // lblCoinsEntered200P
-            // 
-            this.lblCoinsEntered200P.AutoSize = true;
-            this.lblCoinsEntered200P.Location = new System.Drawing.Point(31, 398);
-            this.lblCoinsEntered200P.Name = "lblCoinsEntered200P";
-            this.lblCoinsEntered200P.Size = new System.Drawing.Size(13, 13);
-            this.lblCoinsEntered200P.TabIndex = 22;
-            this.lblCoinsEntered200P.Text = "0";
-            // 
-            // Multiplier1P
-            // 
-            this.Multiplier1P.AutoSize = true;
-            this.Multiplier1P.Location = new System.Drawing.Point(64, 32);
-            this.Multiplier1P.Name = "Multiplier1P";
-            this.Multiplier1P.Size = new System.Drawing.Size(14, 13);
-            this.Multiplier1P.TabIndex = 23;
-            this.Multiplier1P.Text = "X";
-            // 
-            // Multiplier2P
-            // 
-            this.Multiplier2P.AutoSize = true;
-            this.Multiplier2P.Location = new System.Drawing.Point(64, 75);
-            this.Multiplier2P.Name = "Multiplier2P";
-            this.Multiplier2P.Size = new System.Drawing.Size(14, 13);
-            this.Multiplier2P.TabIndex = 24;
-            this.Multiplier2P.Text = "X";
-            // 
-            // Multiplier5P
-            // 
-            this.Multiplier5P.AutoSize = true;
-            this.Multiplier5P.Location = new System.Drawing.Point(64, 128);
-            this.Multiplier5P.Name = "Multiplier5P";
-            this.Multiplier5P.Size = new System.Drawing.Size(14, 13);
-            this.Multiplier5P.TabIndex = 25;
-            this.Multiplier5P.Text = "X";
-            // 
-            // Multiplier10P
-            // 
-            this.Multiplier10P.AutoSize = true;
-            this.Multiplier10P.Location = new System.Drawing.Point(64, 183);
-            this.Multiplier10P.Name = "Multiplier10P";
-            this.Multiplier10P.Size = new System.Drawing.Size(14, 13);
-            this.Multiplier10P.TabIndex = 26;
-            this.Multiplier10P.Text = "X";
-            // 
-            // Multiplier20P
-            // 
-            this.Multiplier20P.AutoSize = true;
-            this.Multiplier20P.Location = new System.Drawing.Point(64, 232);
-            this.Multiplier20P.Name = "Multiplier20P";
-            this.Multiplier20P.Size = new System.Drawing.Size(14, 13);
-            this.Multiplier20P.TabIndex = 27;
-            this.Multiplier20P.Text = "X";
-            // 
-            // Multiplier50P
-            // 
-            this.Multiplier50P.AutoSize = true;
-            this.Multiplier50P.Location = new System.Drawing.Point(64, 284);
-            this.Multiplier50P.Name = "Multiplier50P";
-            this.Multiplier50P.Size = new System.Drawing.Size(14, 13);
-            this.Multiplier50P.TabIndex = 28;
-            this.Multiplier50P.Text = "X";
-            // 
-            // Multiplier100P
-            // 
-            this.Multiplier100P.AutoSize = true;
-            this.Multiplier100P.Location = new System.Drawing.Point(64, 341);
-            this.Multiplier100P.Name = "Multiplier100P";
-            this.Multiplier100P.Size = new System.Drawing.Size(14, 13);
-            this.Multiplier100P.TabIndex = 29;
-            this.Multiplier100P.Text = "X";
-            // 
-            // Multiplier200P
-            // 
-            this.Multiplier200P.AutoSize = true;
-            this.Multiplier200P.Location = new System.Drawing.Point(64, 398);
-            this.Multiplier200P.Name = "Multiplier200P";
-            this.Multiplier200P.Size = new System.Drawing.Size(14, 13);
-            this.Multiplier200P.TabIndex = 30;
-            this.Multiplier200P.Text = "X";
             // 
             // lblHowManyCredits
             // 
