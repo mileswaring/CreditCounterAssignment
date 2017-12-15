@@ -13,6 +13,7 @@ namespace CreditCounter
     public partial class lblHowManyCredits : Form
     {
         int int_ButtonValueLastClicked; //Global variable to keep track of the coin value last clicked
+        decimal decimal_ButtonValueLastClicked;//Global variable to keep track of the decimal value of the coin last clicked
         bool bool_HasCreditBeenEntered = false;//Global varaible to see if the user has entered a cost per credit
 
         public lblHowManyCredits()
@@ -37,7 +38,7 @@ namespace CreditCounter
             {
                 bool_HasCreditBeenEntered = true;
                 UpDateCoinsEnteredLabels();//calling the method to update lables in coins entered groupbox
-                UpdateInt_Values();//calling the method to update the text box to show total value in pence
+                UpdateInt_DecValues();//calling the method to update the text box to show total value in pence
             }
         }
         private void UpDateCoinsEnteredLabels()//method for updating the lables in the coins entered group box
@@ -71,10 +72,10 @@ namespace CreditCounter
             }
         }
 
-        private void UpdateInt_Values()//method for updating 
+        private void UpdateInt_DecValues()//method for updating 
         {
             txtboxTotalValueP.Text = Convert.ToString(Convert.ToInt32(txtboxTotalValueP.Text) + int_ButtonValueLastClicked);//Adding the current value of the total value in p text box to the value of coin last clicked
-            
+            txtboxTotalValueMeasures.Text = Convert.ToString(Convert.ToDecimal(txtboxTotalValueMeasures.Text) + decimal_ButtonValueLastClicked);//Adding the current decimal value of the total value entered and the decimal value of coin last clicked
 
         }
 
@@ -84,6 +85,7 @@ namespace CreditCounter
         {
             
             int_ButtonValueLastClicked = 1; //assining the coin value to the button value last clicked variable
+            decimal_ButtonValueLastClicked = 0.01m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
         }
@@ -92,6 +94,7 @@ namespace CreditCounter
         {
             
             int_ButtonValueLastClicked = 2; //assining the coin value to the button value last clicked variable
+            decimal_ButtonValueLastClicked = 0.02m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
         }
@@ -100,6 +103,7 @@ namespace CreditCounter
         {
             
             int_ButtonValueLastClicked = 5; //assining the coin value to the button value last clicked variable
+            decimal_ButtonValueLastClicked = 0.05m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
         }
@@ -108,6 +112,7 @@ namespace CreditCounter
         {
             
             int_ButtonValueLastClicked = 10; //assining the coin value to the button value last clicked variable
+            decimal_ButtonValueLastClicked = 0.10m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
         }
@@ -116,6 +121,7 @@ namespace CreditCounter
         {
             
             int_ButtonValueLastClicked = 20; //assining the coin value to the button value last clicked variable
+            decimal_ButtonValueLastClicked = 0.20m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
         }
@@ -124,6 +130,7 @@ namespace CreditCounter
         {
             
             int_ButtonValueLastClicked = 50; //assining the coin value to the button value last clicked variable
+            decimal_ButtonValueLastClicked = 0.50m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
         }
@@ -132,6 +139,7 @@ namespace CreditCounter
         {
             
             int_ButtonValueLastClicked = 100; //assining the coin value to the button value last clicked variable
+            decimal_ButtonValueLastClicked = 1.00m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
         }
@@ -140,6 +148,7 @@ namespace CreditCounter
         {
             
             int_ButtonValueLastClicked = 200; //assining the coin value to the button value last clicked variable
+            decimal_ButtonValueLastClicked = 2.00m; //assinging the decimal coin value to the button last clicked variable
             HaveCreditsBeenEntered();//calling the check credits have been entered method
             
         }
